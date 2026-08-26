@@ -17,10 +17,13 @@ print()
 
 # Captura de opcion por el users.
 opcion = input("Selecione una opcion: ")
-
+print()
 if opcion == "1":
-    print("Seleccionaste sumar")
-
+    print("========Suma=======")
+    num1 = float(input("Ingrese primer numero: "))
+    num2 = float(input("Ingrese segundo numero: "))
+    resultado = num1+num2
+    print("Resultado:", resultado)
 elif opcion == "2":
     print("Seleccionaste restar")
 
@@ -35,9 +38,4 @@ elif opcion == "5":
 
 else:
     print("Opciona No Valida.")
-print()
-
-
-print()
-print()
 print()
