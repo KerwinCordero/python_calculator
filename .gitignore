@@ -1,0 +1,7 @@
+# Archivos generados por Python
+__pycache__/
+*.pyc
+
+# Entornos viturales
+venv/
+.venv/
