@@ -1,6 +1,13 @@
 from operaciones import sumar, restar, multiplicar, dividir
 
 
+def solicitar_numeros():
+    num1 = float(input("Ingrese primer numero: "))
+    num2 = float(input("Ingrese segundo numero: "))
+
+    return num1, num2
+
+
 """Creacion de una calculadora """
 # Aqui muestro el codigo completo para crear una calculardora simple
 
@@ -27,34 +34,28 @@ while opcion != "5":
 
     if opcion == "1":
         print("========Suma=======")
-        num1 = float(input("Ingrese primer numero: "))
-        num2 = float(input("Ingrese segundo numero: "))
+        num1, num2 = solicitar_numeros()
         resultado = sumar(num1, num2)
         print("Resultado:", resultado)
         print()
 
     elif opcion == "2":
         print("========Resta=======")
-        num1 = float(input("Ingrese primer numero: "))
-        num2 = float(input("Ingrese segundo numero: "))
+        num1, num2 = solicitar_numeros()
         resultado = restar(num1, num2)
         print("Resultado:", resultado)
         print()
 
     elif opcion == "3":
         print("========Multiplicacion=======")
-        num1 = float(input("Ingrese primer numero: "))
-        num2 = float(input("Ingrese segundo numero: "))
+        num1, num2 = solicitar_numeros()
         resultado = multiplicar(num1, num2)
         print("Resultado:", resultado)
         print()
 
     elif opcion == "4":
         print("========Division=======")
-
-        num1 = float(input("Ingrese primer numero: "))
-        num2 = float(input("Ingrese segundo numero: "))
-
+        num1, num2 = solicitar_numeros()
         resultado = dividir(num1, num2)
 
         if resultado is None:
@@ -63,4 +64,3 @@ while opcion != "5":
             print("Resultado:", resultado)
 
     print()
-
