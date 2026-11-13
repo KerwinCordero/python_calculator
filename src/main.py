@@ -2,10 +2,14 @@ from operaciones import sumar, restar, multiplicar, dividir
 
 
 def solicitar_numeros():
-    num1 = float(input("Ingrese primer numero: "))
-    num2 = float(input("Ingrese segundo numero: "))
+    while True:
+        try:
+            num1 = float(input("Ingrese primer numero: "))
+            num2 = float(input("Ingrese segundo numero: "))
 
-    return num1, num2
+            return num1, num2
+        except ValueError:
+            print("Error: Debes un numero valido.")
 
 
 """Creacion de una calculadora """
